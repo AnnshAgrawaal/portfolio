@@ -1,0 +1,8 @@
+# SPA fallback
+/*    /index.html   200
+
+# API redirects (if needed in the future)
+/api/*  https://api.yourportfolio.com/:splat  200
+
+# Legacy redirects (add as needed)
+/old-portfolio  /  301

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme colors */
+    --color-bg-primary: 255 255 255;
+    --color-bg-secondary: 248 250 252;
+    --color-text-primary: 31 41 55;
+    --color-text-secondary: 107 114 128;
+  }
+
+  .dark {
+    /* Dark theme colors */
+    --color-bg-primary: 10 10 10;
+    --color-bg-secondary: 26 26 26;
+    --color-text-primary: 255 255 255;
+    --color-text-secondary: 161 161 170;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body {
+    @apply bg-background-primary text-text-primary;
+    @apply font-sans antialiased;
+    @apply transition-colors duration-300;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .heading-1 {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight;
+  }
+
+  .heading-2 {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight;
+  }
+
+  .heading-3 {
+    @apply text-2xl sm:text-3xl font-semibold tracking-tight;
+  }
+
+  .body-large {
+    @apply text-lg sm:text-xl text-text-secondary;
+  }
+
+  .body-medium {
+    @apply text-base text-text-secondary;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
