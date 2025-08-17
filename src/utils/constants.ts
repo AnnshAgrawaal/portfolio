@@ -48,25 +48,25 @@ export const SOCIAL_LINKS = [
     {
         id: 'github',
         name: 'GitHub',
-        url: 'https://github.com/yourusername',
+        url: 'https://github.com/annshagrawaal',
         icon: 'github',
     },
     {
         id: 'linkedin',
         name: 'LinkedIn',
-        url: 'https://linkedin.com/in/yourusername',
+        url: 'https://linkedin.com/in/annshagrawaal',
         icon: 'linkedin',
     },
     {
         id: 'twitter',
         name: 'Twitter',
-        url: 'https://twitter.com/yourusername',
+        url: 'https://twitter.com/annshagrawaal',
         icon: 'twitter',
     },
     {
         id: 'email',
         name: 'Email',
-        url: 'mailto:your.email@example.com',
+        url: 'mailto:annshagrawaalind@gmail.com',
         icon: 'mail',
     },
 ] as const;
@@ -75,38 +75,17 @@ export const PERSONAL_INFO = {
     name: 'Annsh Agrawaal',
     title: 'Security Enginner and Developer',
     tagline: 'Breaking and Building modern web applications with passion and precision',
-    email: 'your.email@example.com',
+    email: 'annshagrawaalind@gmail.com',
     location: 'Pune, India',
     resumeUrl: '/assets/resume.pdf',
 } as const;
 
-export const FORM_VALIDATION = {
-    name: {
-        required: 'Name is required',
-        minLength: 4,
-        maxLength: 25,
-    },
-    email: {
-        required: 'Email is required',
-        pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-        invalid: 'Please enter a valid email address',
-    },
-    subject: {
-        required: 'Subject is required',
-        minLength: 5,
-        maxLength: 100,
-    },
-    message: {
-        required: 'Message is required',
-        minLength: 10,
-        maxLength: 1000,
-    },
-} as const;
+
 
 export const SEO_CONFIG = {
     title: 'Annsh Agrawaal Portfolio',
     description: 'Full Stack Developer specializing in React, TypeScript, and Node.js. View my projects and get in touch for collaboration opportunities.',
-    keywords: 'full stack developer, react developer, typescript, node.js, web development, portfolio',
+    keywords: 'annsh agrawaal, security engineer, penetration tester, security researcher, full stack developer, react developer, typescript, node.js, web development, portfolio',
     author: 'Annsh Agrawaal',
     siteUrl: 'https://yourportfolio.com',
     image: '/images/og-image.jpg',

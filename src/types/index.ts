@@ -19,12 +19,7 @@ export interface Skill {
     icon?: string;
 }
 
-export interface ContactForm {
-    name: string;
-    email: string;
-    subject: string;
-    message: string;
-}
+
 
 export interface ThemeContextType {
     theme: 'light' | 'dark';
@@ -66,16 +61,3 @@ export interface AnimationVariants {
     };
 }
 
-// Form validation types
-export interface FormErrors {
-    name?: string;
-    email?: string;
-    subject?: string;
-    message?: string;
-}
-
-export interface FormState {
-    isSubmitting: boolean;
-    isSubmitted: boolean;
-    errors: FormErrors;
-}

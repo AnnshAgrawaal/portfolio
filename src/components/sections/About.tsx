@@ -76,7 +76,7 @@ export function About({ className = '' }: AboutProps) {
 
     const experienceHighlights = [
         {
-            icon: "🚀",
+            icon: "💳",
             title: "Modern Development",
             description: "Expertise in React, TypeScript, and modern web technologies"
         },
@@ -91,7 +91,7 @@ export function About({ className = '' }: AboutProps) {
             description: "Building fast, efficient, and scalable applications"
         },
         {
-            icon: "🔧",
+            icon: "🚀",
             title: "Full Stack Skills",
             description: "End-to-end development from frontend to backend"
         }

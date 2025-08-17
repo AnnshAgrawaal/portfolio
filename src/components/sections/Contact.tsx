@@ -88,6 +88,24 @@ export function Contact({ className = '' }: ContactProps) {
                 animate={isInView ? "visible" : "hidden"}
                 className="container mx-auto max-w-6xl"
             >
+
+                {/* Section Header */}
+                <motion.div variants={itemVariants} className="text-center mb-16 lg:mb-20">
+                    <motion.h2
+                        className="heading-1 mb-6"
+                        variants={itemVariants}
+                    >
+                        Get In Touch
+                    </motion.h2>
+                    <motion.p
+                        className="body-large text-text-secondary max-w-3xl mx-auto"
+                        variants={itemVariants}
+                    >
+                        I'm always interested in new opportunities, collaborations, and interesting projects.
+                        Let's connect and discuss how we can work together.
+                    </motion.p>
+                </motion.div>
+
                 {/* Fun Hobbies Section */}
                 <motion.div
                     variants={itemVariants}
@@ -146,23 +164,6 @@ export function Contact({ className = '' }: ContactProps) {
                             "The best ideas often come when you're not actively looking for them!" 💡
                         </p>
                     </motion.div>
-                </motion.div>
-
-                {/* Section Header */}
-                <motion.div variants={itemVariants} className="text-center mb-16 lg:mb-20">
-                    <motion.h2
-                        className="heading-1 mb-6"
-                        variants={itemVariants}
-                    >
-                        Get In Touch
-                    </motion.h2>
-                    <motion.p
-                        className="body-large text-text-secondary max-w-3xl mx-auto"
-                        variants={itemVariants}
-                    >
-                        I'm always interested in new opportunities, collaborations, and interesting projects.
-                        Let's connect and discuss how we can work together.
-                    </motion.p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
