@@ -123,6 +123,19 @@ export function Contact({ className = '' }: ContactProps) {
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+
+                            <motion.div
+                                className="bg-background-primary/50 p-6 rounded-xl border border-text-secondary/10"
+                                whileHover={{ scale: 1.05, y: -5 }}
+                                transition={{ duration: 0.2 }}
+                            >
+                                <div className="text-4xl mb-3">🕹️</div>
+                                <h4 className="font-semibold text-text-primary mb-2">Competitive Gamer</h4>
+                                <p className="text-sm text-text-secondary">
+                                    I am super competitive and love to play FPS games like Valorant, CSGO, etc.
+                                </p>
+                            </motion.div>
+
                             <motion.div
                                 className="bg-background-primary/50 p-6 rounded-xl border border-text-secondary/10"
                                 whileHover={{ scale: 1.05, y: -5 }}
@@ -131,7 +144,7 @@ export function Contact({ className = '' }: ContactProps) {
                                 <div className="text-4xl mb-3">🎵</div>
                                 <h4 className="font-semibold text-text-primary mb-2">Music Lover</h4>
                                 <p className="text-sm text-text-secondary">
-                                    From jazz to electronic, music fuels my creativity and helps me think through complex problems.
+                                    From rap to electronic, music fuels my creativity and keeps me hyped up.
                                 </p>
                             </motion.div>
 
@@ -143,21 +156,10 @@ export function Contact({ className = '' }: ContactProps) {
                                 <div className="text-4xl mb-3">🏃‍♂️</div>
                                 <h4 className="font-semibold text-text-primary mb-2">Fitness Enthusiast</h4>
                                 <p className="text-sm text-text-secondary">
-                                    Running, hiking, and gym sessions keep my mind sharp and my energy levels high for coding marathons.
+                                    Running, hiking, and gym sessions keep my mind sharp and my energy levels high.
                                 </p>
                             </motion.div>
 
-                            <motion.div
-                                className="bg-background-primary/50 p-6 rounded-xl border border-text-secondary/10"
-                                whileHover={{ scale: 1.05, y: -5 }}
-                                transition={{ duration: 0.2 }}
-                            >
-                                <div className="text-4xl mb-3">📚</div>
-                                <h4 className="font-semibold text-text-primary mb-2">Lifelong Learner</h4>
-                                <p className="text-sm text-text-secondary">
-                                    Always reading about new technologies, design trends, or diving into sci-fi novels for inspiration.
-                                </p>
-                            </motion.div>
                         </div>
 
                         <p className="text-sm text-text-secondary italic">

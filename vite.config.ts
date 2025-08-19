@@ -24,7 +24,7 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: false, // Disable sourcemaps in production for smaller bundle
     minify: 'terser',
-    target: 'es2020',
+    target: 'es2022',
     rollupOptions: {
       output: {
         manualChunks: {
@@ -43,5 +43,10 @@ export default defineConfig({
   // Enable gzip compression
   esbuild: {
     drop: ['console', 'debugger'], // Remove console logs in production
+    target: 'es2022', // Optimize for Node 22
+  },
+  // Node 22 optimizations
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'framer-motion'],
   },
 })

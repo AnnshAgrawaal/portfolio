@@ -112,3 +112,13 @@
     overflow: hidden;
   }
 }
+
+/* Scroll Progress Indicator Styles */
+#scroll-indicator {
+  background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  height: 3px;
+  border-radius: 0 2px 2px 0;
+  will-change: transform;
+  backface-visibility: hidden;
+}

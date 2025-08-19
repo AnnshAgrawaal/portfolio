@@ -9,14 +9,17 @@ export function ScrollProgressIndicator({ className = '' }: ScrollProgressIndica
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 100,
         damping: 30,
-        restDelta: 0.001
+        restDelta: 0.001,
     });
 
     return (
         <motion.div
-            className={`fixed top-0 left-0 right-0 h-1 bg-accent origin-left z-50 ${className}`}
-            style={{ scaleX }}
-            initial={{ scaleX: 0 }}
+            id="scroll-indicator"
+            className={`fixed top-0 left-0 right-0 z-[60] ${className}`}
+            style={{
+                scaleX,
+                transformOrigin: "0%",
+            }}
         />
     );
 }
