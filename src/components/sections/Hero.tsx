@@ -1,5 +1,5 @@
 import { PERSONAL_INFO } from '@/utils/constants';
-import { Spotlight } from '@/components/ui/Spotlight';
+import { Spotlight } from '@/components/ui/spotlight';
 import { useTheme } from '@/hooks/useTheme';
 
 interface HeroProps {
@@ -27,7 +27,7 @@ export function Hero({ className = '' }: HeroProps) {
             className={`min-h-screen relative overflow-hidden antialiased flex items-center justify-center py-20 px-4 ${className}`}
             aria-label="Hero section"
         >
-            <div className="pointer-events-none absolute inset-0 select-none [background-size:40px_40px] dark:[background-image:linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)]" />
+            <div className="pointer-events-none absolute inset-0 -z-10 select-none [background-size:40px_40px] dark:[background-image:linear-gradient(to_right,rgba(23,23,23,0.5)_1px,transparent_1px),linear-gradient(to_bottom,rgba(23,23,23,0.5)_1px,transparent_1px)]" />
 
             <Spotlight className="-top-40 left-0 md:-top-20 md:left-60" fill={theme === 'dark' ? 'white' : 'black'} />
             <div className="container mx-auto max-w-4xl text-center">
