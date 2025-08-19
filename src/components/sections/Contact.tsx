@@ -172,8 +172,8 @@ export function Contact({ className = '' }: ContactProps) {
                     {/* Contact Information */}
                     <motion.div variants={itemVariants} className="space-y-8">
                         <div>
-                            <h3 className="heading-2 mb-6 text-accent">Let's Connect</h3>
-                            <p className="body-medium text-text-secondary mb-8 leading-relaxed">
+                            <h3 className="heading-2 mb-2 text-accent">Let's Connect</h3>
+                            <p className="body-medium text-text-secondary mb-4 leading-relaxed">
                                 Whether you have a project in mind, want to collaborate, or just want to say hello,
                                 I'd love to hear from you. I typically respond within 24 hours.
                             </p>

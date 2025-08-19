@@ -1,10 +1,13 @@
 import { PERSONAL_INFO } from '@/utils/constants';
+import { Spotlight } from '@/components/ui/Spotlight';
+import { useTheme } from '@/hooks/useTheme';
 
 interface HeroProps {
     className?: string;
 }
 
 export function Hero({ className = '' }: HeroProps) {
+    const { theme } = useTheme();
     const handleScrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId);
         if (element) {
@@ -21,9 +24,12 @@ export function Hero({ className = '' }: HeroProps) {
     return (
         <section
             id="home"
-            className={`min-h-screen flex items-center justify-center py-20 px-4 ${className}`}
+            className={`min-h-screen relative overflow-hidden antialiased flex items-center justify-center py-20 px-4 ${className}`}
             aria-label="Hero section"
         >
+            <div className="pointer-events-none absolute inset-0 select-none [background-size:40px_40px] dark:[background-image:linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)]" />
+
+            <Spotlight className="-top-40 left-0 md:-top-20 md:left-60" fill={theme === 'dark' ? 'white' : 'black'} />
             <div className="container mx-auto max-w-4xl text-center">
                 {/* Main Content */}
                 <div className="space-y-8">
